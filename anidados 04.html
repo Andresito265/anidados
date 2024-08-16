@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<HTml>
+    <head>
+        <title></title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="css/estilo 02.css">
+    </head>
+<body>
+    <script> 
+    /* programa que Solicita la cantidad de camisas, valor individual de la camisa,y la forma de pago -si es efectivo-10% descuento-cheque-8%-tarjeta 5%-cuotas--solicitar cuantas cuotas e incrementar el 1.5% a cada cuota*/
+    let camisas,vcamisas,forma,subtotal,descuento,cuotas,neto;
+    camisas=parseInt(prompt("Ingrese el numero de camisas a comprar"));
+    vcamisas=parseInt(prompt("ingrese el valor unitario de la camisa"));
+    forma=prompt("Ingrese forma de pago E.efectivo C-cheque T-Tarjeta X-cuotas");
+    subtotal=camisas*vcamisas;
+    document.write("<table><caption>FACTURA DE VENTA DE ALMACEN PAE-INC</caption><tr><th>PRODUCTO</th><td>CAMISAS</td></tr><tr><th>CANTIDAD</th><td>",camisas,"</td></tr><tr><th>VALOR UNITARIO</th><td>",vcamisas,"</td></tr><tr><th>FORMA DE PAGO</th><td>",forma,"</td></tr><tr><th>SUBTOTAL</th><td>",subtotal,"</td></tr><tr><th>DESCUENTO</th>");
+    if(forma=="E")
+    {
+        descuento=subtotal*10/100;//0.10//
+        neto=subtotal-descuento;
+        document.write("<td>",descuento,"</td></tr><tr><th>NETO</th><td>",neto,"</td></tr></table>");
+    }
+    else
+    {
+        if(forma=="C")
+        {
+            descuento=subtotal*5/100;//0.8//
+            neto=subtotal-descuento;
+            document.write("<td>",descuento,"</td></tr><tr><th>NETO</th><td>",neto,"</td></tr></table>");
+        }
+
+             else
+           {
+            if(forma=="T")
+            {
+            descuento=subtotal*5/100;//0.5//
+            neto=subtotal-descuento;
+            document.write("<td>",descuento,"</td></tr><tr><th>NETO</th><td>",neto,"</td></tr></table>");
+
+            }
+                else
+                { 
+                if(forma=="X")
+                {
+                 cuotas=parseInt(prompt("Ingrese la cantidad de cuotas"));
+                 let pcuotas=(subtotal/cuotas)+((subtotal/cuotas)*1.5/100);
+                 document.write("<td>0</td></tr><tr><th>No.</th><td>",cuotas,"</td></tr><tr><th>VALOR CUOTA</th><td>",cuotas,"</td></tr></table>");
+
+
+                }
+            }  
+        }    
+    }
+    
+    </script>
+</body>
+</html>

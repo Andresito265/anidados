@@ -1,0 +1,29 @@
+#c1
+{
+    text-align:center;
+    color:rgb(41, 40, 39);
+    font-size: 18px;
+    font-style:italic;
+}
+body
+{
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p
+{
+    text-align:justify;
+   font-size:18px;
+    border-radius: 10px;
+    border-color:blueviolet;
+    border-style:solid;
+    background-color: coral;
+}
+img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border-color:fuchsia;
+    border-style: solid;
+}

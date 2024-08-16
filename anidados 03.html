@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<HTml>
+    <head>
+        <title></title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="css/estilo 02.css">
+    </head>
+<body>
+    <script> 
+    /* programa que capture nombre cusro,3 notas,  calcula la definitiva y la clasificacion asi:<3.0 recuperar>3.0 Aprovado*/ 
+    let nombre =(prompt("Ingrese su nombre"));
+    let curso =prompt("ingrese su curso actual");
+    let n1=parseFloat(prompt("Ingrese la primera nota"));
+    let n2=parseFloat(prompt("Ingrese la segunda nota"));
+    let n3=parseFloat(prompt("Ingrese la tercera nota"));
+    let definitiva=(n1+n2+n3)/3;
+    document.write("<table><caption>RELACION NOTAS ESTUDIANTE </caption><tr><th>NOMBRE</th><td>",nombre,"</td></tr><tr><th>CURSO</th><td>",curso,"</td></tr><tr><th>NOTA 01</th><td>",n1,"</td></tr><tr><th>NOTA 02 </th><td>",n2,"</td></tr><tr><th>NOTA 03 </th><td>",n3,"</td></tr><tr><th>DEFINITIVA </th><td>",definitiva,"</td></tr><tr><th>ESTADO</th><td>");
+      if(definitiva<3.0)
+      {
+          let estado="REPROBADO";
+          document.write(estado,"</td></tr></table>");
+      }
+      else
+      {
+          if(definitiva==3.0)
+          {
+              let estado="RECUPERAR";
+              document.write(estado,"</td></tr></table>");
+          }
+          else
+          {
+              if(definitiva>3.0)
+          {
+              let estado="APROBADO";
+              document.write(estado,"</td></tr></table>");
+            }
+        }
+    }  
+
+
+    
+    </script>
+</body>
+</html> 

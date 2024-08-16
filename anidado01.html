@@ -1,0 +1,52 @@
+<!DOCTYPE hatml>
+<html>
+    <head>
+        <title>condiciones anidados</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/css.css">
+    </head>
+    <body>
+        <script>
+            /*DEPORTE PUNTAJE  --- NATACION 100  --- FUTBOL 80  --- BEISBOL 50  --- TENIS 150 PARA CUALQUIER OTRO 0*/
+            let DEPORTE=prompt("selccione el deporte de su preferencia Natación -N, Fútbol -F, Beisbol -B, Tenis -T");
+            if(DEPORTE=="N")
+            {
+                let PUNTAJE=100;
+                let d="Natación";
+                document.write("el puntaje otorgado por ",d,"es :",PUNTAJE,"puntos");
+            }
+            else
+            {
+                if(DEPORTE=="F")
+                {
+                    let PUNTAJE=80
+                    let d="Fútbol"
+                    document.write("el puntaje otorgado por ",d,"es :",PUNTAJE,"puntos");
+                }
+                else
+                {
+                    if(DEPORTE=="B")
+                    {
+                        let PUNTAJE=50
+                        let d="Beisbol"
+                         document.write("el puntaje otorgado por ",d,"es :",PUNTAJE,"puntos");
+                    }
+                    else
+                    {
+                        if(DEPORTE=="T")
+                        {
+                            let PUNTAJE=150
+                            let d="Tenis"
+                            document.write("el puntaje otorgado por ",d,"es :",PUNTAJE,"puntos");
+                        }
+                        else
+                        {
+                            document.write("el deporte no existe");
+                        }
+                    }
+                }
+            }
+
+        </script>
+    </body>
+</html>

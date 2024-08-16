@@ -1,0 +1,47 @@
+h1 
+{
+    text-align:center;
+    text-decoration:underline;
+    color:brown;
+    font-size:30px;
+}
+body 
+{
+    background-color:rgb(72, 0, 241);
+    font-family:'Courier New', Courier, monospace;
+    font-style:italic;
+    font-weight: bolder;
+    font-size:25px;
+}
+table
+{
+    border-color:green;
+    border-style:solid;
+    margin:auto;
+    width:80%;
+    position:absolute;top: 250px;
+
+}
+table caption
+{
+  text-align: center;
+  font-size:35px;
+  border-radius: 10px;
+  border-color:chocolate;
+  border-style:solid;
+  background-color:crimson;
+
+}
+table th
+{
+    border-color:blueviolet;
+    border-style:solid;
+    background-color:gold;
+    text-align:center;   
+}
+table td
+{
+    border-color:darksalmon;
+    border-style:solid;
+    text-align:center;
+}
